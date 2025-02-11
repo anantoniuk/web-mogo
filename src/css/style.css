@@ -1,0 +1,93 @@
+:root {
+  /* шрифти */
+  --textPrimary: "Montserrat", serif;
+  --textSecond: "Roboto", serif;
+  --textContrast: "Kaushan Script", serif;
+  /* кольори */
+  --colorNav: #95e1d3;
+  --colorTextPrimary: #333333;
+  --colorSecondText: #b6b6b6;
+  --colorNavHover: #f38181;
+  --colorTextButton: #ffffff;
+}
+body {
+  font-family: var(--textPrimary);
+  color: var(--colorTextPrimary);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+/* header */
+.logo {
+  color: var(--colorNav);
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-link {
+  color: var(--colorNav);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--colorNavHover);
+}
+/* services */
+.section-ask {
+  font-family: var(--textContrast);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+.services-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.services-text {
+  font-family: var(--textSecond);
+  color: var(--colorSecondText);
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* team */
+.team-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.team-text {
+  font-family: var(--textSecond);
+  color: var(--textSecond);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+.teammate-role {
+  font-family: var(--textSecond);
+  color: var(--colorSecondText);
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+}
+/* footer */
+.footer-text-contrast {
+  color: var(--colorNavHover);
+}
+.form-email {
+  font-family: var(--textSecond);
+  color: var(--colorSecondText);
+  font-weight: 300;
+  font-style: italic;
+}
+.form-button {
+  color: var(--colorTextButton);
+  font-weight: 700;
+  background-color: var(--colorNav);
+  border: none;
+  padding: 11px 38px;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: var(--colorNavHover);
+}

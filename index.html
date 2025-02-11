@@ -4,76 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoGo</title>
+    <!-- шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- лінк -->
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="#">MoGo</a>
-      <nav>
-        <ul>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#services">SERVICE</a></li>
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
+    <header class="header">
+      <a class="logo" href="#">MoGo</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">WORK</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="header">
       <!-- сервери -->
-      <section id="services">
-        <hgroup>
-          <p>We work with</p>
-          <h2>Amazing Services</h2>
+      <section class="services">
+        <hgroup class="services-content">
+          <p class="section-ask">We work with</p>
+          <h2 class="services-title">Amazing Services</h2>
         </hgroup>
-        <ul>
-          <li>
-            <div><img src="./src/img/services/clock.svg" alt="clock" /></div>
-            <h2>photography</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li>
-            <div><img src="./src/img/services/graph.svg" alt="graph" /></div>
-            <h2>photography</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="./src/img/services/display.svg" alt="display" />
+        <ul class="services-list">
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/clock.svg"
+                alt="clock"
+              />
             </div>
-            <h2>photography</h2>
-            <p>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li>
-            <div><img src="./src/img/services/paper.svg" alt="paper" /></div>
-            <h2>photography</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li>
-            <div><img src="./src/img/services/home.svg" alt="home" /></div>
-            <h2>photography</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li>
-            <div>
-              <img src="./src/img/services/marketing.svg" alt="marketing" />
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/graph.svg"
+                alt="graph"
+              />
             </div>
-            <h2>photography</h2>
-            <p>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/display.svg"
+                alt="display"
+              />
+            </div>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/paper.svg"
+                alt="paper"
+              />
+            </div>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/home.svg"
+                alt="home"
+              />
+            </div>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="services-item">
+            <div class="services-photo">
+              <img
+                class="services-img"
+                src="./src/img/services/marketing.svg"
+                alt="marketing"
+              />
+            </div>
+            <h2 class="services-category">photography</h2>
+            <p class="services-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
@@ -81,62 +122,74 @@
         </ul>
       </section>
       <!-- команда -->
-      <section>
-        <hgroup>
-          <p>Who we are</p>
-          <h2>Meet our team</h2>
-          <p>
+      <section class="team">
+        <hgroup class="team-content">
+          <p class="section-ask">Who we are</p>
+          <h2 class="team-title">Meet our team</h2>
+          <p class="team-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </hgroup>
-        <ul>
-          <li>
-            <article>
-              <div>
-                <img src="./src/img/team/matthew.jpg" alt="Matthew Dix" />
+        <ul class="team-list">
+          <li class="team-item">
+            <article class="teammate">
+              <div class="teammate-photo">
+                <img
+                  class="teammate-img"
+                  src="./src/img/team/matthew.jpg"
+                  alt="Matthew Dix"
+                />
               </div>
-              <div>
-                <h3>Matthew Dix</h3>
-                <p>Graphic Design</p>
+              <div class="teammate-content">
+                <h3 class="teammate-name">Matthew Dix</h3>
+                <p class="teammate-role">Graphic Design</p>
               </div>
             </article>
           </li>
           <li>
-            <article>
-              <div>
+            <article class="teammate">
+              <div class="teammate-photo">
                 <img
+                  class="teammate-img"
                   src="./src/img/team/christopher.jpg"
                   alt="Christopher Campbell"
                 />
               </div>
-              <div>
-                <h3>Christopher Campbell</h3>
-                <p>Branding/UX design</p>
+              <div class="teammate-content">
+                <h3 class="teammate-name">Christopher Campbell</h3>
+                <p class="teammate-role">Branding/UX design</p>
               </div>
             </article>
           </li>
           <li>
-            <article>
-              <div>
-                <img src="./src/img/team/michael.jpg" alt="Michael Fertig" />
+            <article class="teammate">
+              <div class="teammate-photo">
+                <img
+                  class="teammate-img"
+                  src="./src/img/team/michael.jpg"
+                  alt="Michael Fertig"
+                />
               </div>
-              <div>
-                <h3>Michael Fertig</h3>
-                <p>Developer</p>
+              <div class="teammate-content">
+                <h3 class="teammate-name">Michael Fertig</h3>
+                <p class="teammate-role">Developer</p>
               </div>
             </article>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <p>© 2016 MoGo free PSD template by <span>Laaqiq</span></p>
-      <form>
-        <input type="email" placeholder="Your Email..." />
-        <button type="submit">Subscribe</button>
+    <footer class="footer">
+      <p class="footer-text">
+        © 2016 MoGo free PSD template by
+        <span class="footer-text-contrast">Laaqiq</span>
+      </p>
+      <form class="form">
+        <input class="form-email" type="email" placeholder="Your Email..." />
+        <button class="form-button" type="submit">Subscribe</button>
       </form>
     </footer>
   </body>
